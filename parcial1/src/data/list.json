@@ -1,0 +1,70 @@
+{
+    "imageData" : [
+        {
+            "isbn": "850214064-7",
+            "title": "Always",
+            "summary": "augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit",
+            "author": "Erinna Adamini",
+            "year": 2006,
+            "availableOnline": false,
+            "publisher": "Innotype",
+            "price": "$90.04",
+            "image": "http://dummyimage.com/100x100.png/ff4444/ffffff"
+        },
+        {
+            "isbn": "669648121-4",
+            "title": "Tadpole",
+            "summary": "suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris",
+            "author": "Selie Meeks",
+            "year": 2000,
+            "availableOnline": true,
+            "publisher": "Mynte",
+            "price": "$59.96",
+            "image": "http://dummyimage.com/100x100.png/5fa2dd/ffffff"
+        },
+        {
+            "isbn": "082181027-8",
+            "title": "Gospel According to St. Matthew, The (Vangelo secondo Matteo, Il)",
+            "summary": "rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras",
+            "author": "Vonny Harold",
+            "year": 2012,
+            "availableOnline": true,
+            "publisher": "Rhynoodle",
+            "price": "$54.18",
+            "image": "http://dummyimage.com/100x100.png/5fa2dd/ffffff"
+        },
+        {
+            "isbn": "438327809-4",
+            "title": "Return from Witch Mountain",
+            "summary": "tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac",
+            "author": "Griff Jeannon",
+            "year": 1990,
+            "availableOnline": true,
+            "publisher": "Innotype",
+            "price": "$62.02",
+            "image": "http://dummyimage.com/100x100.png/dddddd/000000"
+        },
+        {
+            "isbn": "651928413-0",
+            "title": "Romero",
+            "summary": "nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum",
+            "author": "Missie Gwioneth",
+            "year": 2000,
+            "availableOnline": true,
+            "publisher": "Feedbug",
+            "price": "$96.73",
+            "image": "http://dummyimage.com/100x100.png/cc0000/ffffff"
+        },
+        {
+            "isbn": "278761737-9",
+            "title": "I Dreamed of Africa",
+            "summary": "phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula",
+            "author": "Frederich Clearley",
+            "year": 1993,
+            "availableOnline": false,
+            "publisher": "Npath",
+            "price": "$72.80",
+            "image": "http://dummyimage.com/100x100.png/5fa2dd/ffffff"
+        }
+    ]
+}

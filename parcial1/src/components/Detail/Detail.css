@@ -1,0 +1,52 @@
+/* Detail.css */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border: 1px solid #000;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.card-subtitle {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.notas-label {
+    font-weight: bold;
+}
+
+.notas-text {
+    margin-top: 5px;
+}
+
+.card-text {
+    font-size: medium;
+    margin-top: 10px;
+}
