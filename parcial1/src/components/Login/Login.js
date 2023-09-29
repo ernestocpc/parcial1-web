@@ -42,39 +42,32 @@ function Login() {
   });
 
   const clickSubmit = () => {
-    const isValidEmail = handleEmailValidation();
-    if (true) {
-      // Metodo POST
-      const URL = 'http://localhost:3001/login';
-      const data = {
-        login: formValues.email,
-        password: formValues.password,
-      };
-      const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      };
-      fetch(URL, requestOptions)
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          if (data.status === 'success') {
-            alert('Bienvenido! ');
-            // localStorage.setItem('user', JSON.stringify(data.user));
-            handleLogin();
-          } else {
-            alert('Usuario o contraseña incorrectos');
-          }
-        })
-        .catch((error) => {
-          console.error('Error fetching data:', error);
-        });
-      // handleLogin();
-
-    } else {
-      alert('Porfavor corregir los errores del formulario antes de enviar');
-    }
+    // Metodo POST
+    const URL = 'http://localhost:3001/login';
+    const data = {
+      login: formValues.email,
+      password: formValues.password,
+    };
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    };
+    fetch(URL, requestOptions)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        if (data.status === 'success') {
+          alert('Bienvenido! ');
+          // localStorage.setItem('user', JSON.stringify(data.user));
+          handleLogin();
+        } else {
+          alert('Usuario o contraseña incorrectos');
+        }
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
   };
 
 
@@ -107,10 +100,6 @@ function Login() {
                     value={formValues.email}
                     isInvalid={!validationStates.email}
                   />
-                  {/* {!validationStates.email &&
-                    <Form.Control.Feedback type="invalid">
-                      Porfavor ingresar direccion de correo valida.
-                    </Form.Control.Feedback>} */}
                 </Form.Group>
                 <Form.Group className="form-group" controlId="formBasicPassword">
                   <Form.Label>Contraseña</Form.Label>
@@ -119,9 +108,7 @@ function Login() {
                     placeholder="Password"
                     onChange={handlePasswordChange}
                     value={formValues.password}
-                    // isInvalid={!validationStates.password}
                   />
-                  {/* <Form.Control.Feedback type="invalid">La contraseña deberia tener al menos 6 caracteres y tener numeros y letras</Form.Control.Feedback> */}
                 </Form.Group>
                 <Button variant="success" className="green-button" onClick={clickSubmit}>
                   Ingresar

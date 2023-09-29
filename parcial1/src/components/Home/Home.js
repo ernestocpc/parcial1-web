@@ -1,18 +1,13 @@
-import { useNavigate } from 'react-router-dom';
 import './Home.css'
-import CardList from '../Cards/CardList/CardList';
+import CardList from '../CardList/CardList';
 import Detail from '../Detail/Detail';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useState } from 'react';
 
 function Home() {
     const [visible, setVisible] = useState(false);
-    const navigate = useNavigate();
     const [detailId, setDetailId] = useState(null);
 
-    const clickLogin = () => {
-        navigate('/login');
-    }
 
     // Function to handle card click
     const onCardClick = (cardId) => {

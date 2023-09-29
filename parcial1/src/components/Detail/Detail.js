@@ -3,11 +3,8 @@ import './Detail.css';
 
 function Detail({id}) {
     const [cafeDetail, setCafeDetail] = useState({});
-    const [role, setRole] = useState(true);
-
 
     useEffect(() => {
-        console.log("Detalle de " , id)
         fetch(`http://localhost:3001/cafes/${id}`)
             .then(response => response.json())
             .then(data => {
@@ -23,13 +20,13 @@ function Detail({id}) {
             <div className="card">
                 <div className="card-body text-center">
                     <h4 className="card-title">{cafeDetail.nombre}</h4>
-                    <p className="card-subtitle mb-2 text-muted">{cafeDetail.date}</p>
+                    <p className="card-subtitle mb-2 text-muted">{cafeDetail.fecha_cultivo}</p>
                     <img src={cafeDetail.image} alt={cafeDetail.nombre} className="card-img-top" />
                     <div className="card-text">
                         <p className="notas-label">Notas:</p>
                         <p className="notas-text">{cafeDetail.notas}</p>
                     </div>
-                    <h4 className="card-text"><strong>{cafeDetail.region}</strong></h4>
+                    <h4 className="card-text"><strong>Cultivado a una altura de : {cafeDetail.altura}m</strong></h4>
                 </div>
             </div>
         </div>
