@@ -16,20 +16,29 @@ function Detail({ id }) {
       });
   }, [id]);
 
+  function isValidDate(dateString) {
+    const date = new Date(dateString);
+    return !isNaN(date.getTime());
+  }
+
   return (
     <div className="card">
       <h4 className="card-title">
         <strong>{cafeDetail.nombre}</strong>
       </h4>
       <p className="card-subtitle text-muted">
-        {" "}
-        <FormattedDate
-          value={new Date(cafeDetail.fecha_cultivo)}
-          year="numeric"
-          month="numeric"
-          day="numeric"
-        />
+        {isValidDate(cafeDetail.fecha_cultivo) ? (
+          <FormattedDate
+            value={new Date(cafeDetail.fecha_cultivo)}
+            year="numeric"
+            month="numeric"
+            day="numeric"
+          />
+        ) : (
+          <FormattedMessage id="invalidDate" />
+        )}
       </p>
+
       <img
         src={cafeDetail.imagen}
         alt={cafeDetail.nombre}
@@ -43,8 +52,8 @@ function Detail({ id }) {
       </div>
       <h4 className="card-text">
         <strong>
-          <FormattedMessage id="altitude" /> 
-           {cafeDetail.altura} <FormattedMessage id="seaLevel" />
+          <FormattedMessage id="altitude" />
+          {cafeDetail.altura} <FormattedMessage id="seaLevel" />
         </strong>
       </h4>
     </div>

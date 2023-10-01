@@ -11,6 +11,7 @@
     "welcome": "Welcome!",
     "loginError": "Username or password incorrect",
     "footer": "Contact us",
+    "invalidDate": "Date not available",
     "notes": "Notes",
     "altitude": "Grown at a height of: ",
     "seaLevel": "mamsl"

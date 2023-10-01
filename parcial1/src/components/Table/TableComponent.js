@@ -1,10 +1,10 @@
-import './CardList.css';
+import './TableComponent.css';
 import { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 import { FormattedMessage } from 'react-intl';
 
-function CardList({ onCardClick }) {
+function TableComponent({ onCardClick }) {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
@@ -51,4 +51,4 @@ function CardList({ onCardClick }) {
         </Container>
     );
 }
-export default CardList;
+export default TableComponent;

@@ -11,6 +11,7 @@
     "welcome": "Bienvenido!",
     "loginError": "Usuario o contraseña incorrectos",
     "footer": "Contactanos",
+    "invalidDate": "Fecha no disponible",
     "notes": "Notas",
     "altitude": "Cultivado a una altura de: ",
     "seaLevel": "msnm"

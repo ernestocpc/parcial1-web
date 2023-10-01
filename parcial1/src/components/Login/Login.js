@@ -1,12 +1,15 @@
+import { Col } from "react-bootstrap";
 import "./Login.css";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { FormattedMessage } from "react-intl";
 import { useIntl } from 'react-intl'; 
+import { useNavigate } from "react-router-dom";
 
-function Login({ onLoginSuccess }) {
+function Login() {
   const intl = useIntl();
+  const navegate = useNavigate();
   const [loginFailed, setLoginFailed] = useState(false);
   const [formValues, setFormValues] = useState({
     email: "",
@@ -23,6 +26,10 @@ function Login({ onLoginSuccess }) {
     const passwordValue = e.target.value;
     setFormValues({ ...formValues, password: passwordValue });
   };
+
+  const handleLogin = () => {
+    navegate("/home");
+  }
 
   const handleCancelClick = () => {
     // Reset form values to their initial state
@@ -51,7 +58,7 @@ function Login({ onLoginSuccess }) {
         console.log(data);
         if (data.status === "success") {
           alert(intl.formatMessage({id: "welcome"}));
-          onLoginSuccess();
+          handleLogin();
         } else {
           setLoginFailed(true);
           alert(intl.formatMessage({id: "loginError"}));
@@ -63,7 +70,7 @@ function Login({ onLoginSuccess }) {
   };
 
   return (
-    <>
+    <Col md={{ offset: 0, span: 7 }}>
       <div className="login-tile">
         <p>
           <strong>
@@ -122,7 +129,7 @@ function Login({ onLoginSuccess }) {
           )}
         </Form>
       </div>
-    </>
+    </Col>
   );
 }
 
