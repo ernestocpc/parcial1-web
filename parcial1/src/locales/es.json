@@ -1,0 +1,17 @@
+{
+    "Name": "Nombre",
+    "Type": "Tipo",
+    "Region": "Región",
+    "login": "Inicio de sesion",
+    "user": "Nombre de usuario",
+    "password": "Contraseña",
+    "submit": "Ingresar",
+    "cancel": "Cancelar",
+    "error":"Error de autenticación. Revise sus credenciales",
+    "welcome": "Bienvenido!",
+    "loginError": "Usuario o contraseña incorrectos",
+    "footer": "Contactanos",
+    "notes": "Notas",
+    "altitude": "Cultivado a una altura de: ",
+    "seaLevel": "msnm"
+}

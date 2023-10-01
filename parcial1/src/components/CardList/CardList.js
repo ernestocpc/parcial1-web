@@ -2,6 +2,7 @@ import './CardList.css';
 import { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
+import { FormattedMessage } from 'react-intl';
 
 function CardList({ onCardClick }) {
     const [cards, setCards] = useState([]);
@@ -18,21 +19,27 @@ function CardList({ onCardClick }) {
     }, []);
 
     return (
-        <Container fluid className="cardList-container">
+        <Container fluid className="table-container">
             <Row>
-                <Table striped bordered hover size='sm' >
+                <Table hover size='lg' >
                     <thead className='table-dark'>
                         <tr>
                             <th>#</th>
-                            <th>Nombre</th>
-                            <th>Tipo</th>
-                            <th>Region</th>
+                            <th>
+                                <FormattedMessage id="Name"/>
+                            </th>
+                            <th>
+                                <FormattedMessage id="Type"/>
+                            </th>
+                            <th>
+                                <FormattedMessage id="Region"/>
+                            </th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className='table-body'>
                         {cards.map((card, index) => (
                             <tr key={index} onClick={() => onCardClick(card.id)}>
-                                <td>{card.id}</td>
+                                <td><strong>{card.id}</strong></td>
                                 <td>{card.nombre}</td>
                                 <td>{card.tipo}</td>
                                 <td>{card.region}</td>

@@ -1,0 +1,17 @@
+{
+    "Name": "Name",
+    "Type": "Type",
+    "Region": "Region",
+    "login": "Log In",
+    "user": "Username",
+    "password": "Password",
+    "submit": "Sign In",
+    "cancel": "Cancel",
+    "error":"Authentication Error. Check your credentials",
+    "welcome": "Welcome!",
+    "loginError": "Username or password incorrect",
+    "footer": "Contact us",
+    "notes": "Notes",
+    "altitude": "Grown at a height of: ",
+    "seaLevel": "mamsl"
+}

@@ -1,17 +1,29 @@
 /* CardList.css */
-.cardList-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+.table-dark {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
-.cardList-card {
-    flex: 1;
-    max-width: calc(33.33% - 1rem);
-    width: 100%;
+.table-dark th {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
-.cardList-card:hover {
-    cursor: pointer;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+.table-body {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
